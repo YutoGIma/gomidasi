@@ -1,12 +1,60 @@
+body{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #FDFBEB;
+    
+    
+}
 .top_img{
     width:100%;
+    
+    
+    
+    
 }
 .city_select{
     text-align:center;
+    font-family: Hiragino Maru Gothic ProN;
 }
 .city_select h1{
     font-size:45px;
+    
 }
-.city_menu{
+
+input[type = "text"]{
+    border: 1px solid black;
+    width: 160px;
+    height: 33px;
+    font-size: 18px;
+    border-radius:3px;
+
+    
+}
+
+input[type = "submit"]{
+    border: 1px solid black;
+    width: 50px;
+    height: 35px;
+    font-size: 18px;
+    border-radius:3px;
+    
+    
+}
+
+.city_menu a{
+    font-family: Hiragino Maru Gothic ProN;
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    border: solid black 1px;
+    width: 58%;
+    margin-top: 35px;
+    margin-left: 100px;
+    color: black;
+    background-color: #81C9E1;
+    text-decoration: none;
+    
+    
     
 }
