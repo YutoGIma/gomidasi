@@ -30,6 +30,8 @@ img {
 }
 .city_select h1{
     font-size:45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .city_sc{
@@ -80,6 +82,7 @@ header h1{
     float:left;
     font-size:25px;
     padding:25px 0px 0px 5px;
+    
 }
 .gomisc{
     float:right;
