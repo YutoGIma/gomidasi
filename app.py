@@ -8,6 +8,8 @@ def select_city():
     return render_template("select_city.html")
 
 
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run()
