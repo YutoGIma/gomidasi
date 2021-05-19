@@ -1,17 +1,8 @@
-body{
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    background-color: #FDFBEB;
-    
-}
-
 body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
 	margin: 0px;
 	padding: 0px;
 }
 body {
-	background: #fff;
 	font-size: 16px;
 	line-height: 1.4;
 	min-width: 100%;
@@ -29,12 +20,9 @@ img {
 	border: 0px;
 	vertical-align: bottom;
 }
+
 .top_img{
     width:100%;
-    
-    
-    
-    
 }
 .city_select{
     text-align:center;
@@ -42,20 +30,17 @@ img {
 }
 .city_select h1{
     font-size:45px;
-    
 }
 
-input[type = "text"]{
+.city_sc{
     border: 1px solid black;
     width: 160px;
     height: 33px;
     font-size: 18px;
     border-radius:3px;
-
-    
 }
 
-input[type = "submit"]{
+.city_sb{
     border: 1px solid black;
     width: 50px;
     height: 35px;
