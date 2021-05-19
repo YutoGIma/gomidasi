@@ -40,6 +40,7 @@ img {
     height: 33px;
     font-size: 18px;
     border-radius:3px;
+    
 }
 
 .city_sb{
@@ -87,6 +88,8 @@ header h1{
 .gomisc{
     float:right;
     padding:29px 5px 0px 0px;
+    
+    
 }
 .calender th,td{
     border:1px solid black;
@@ -170,4 +173,29 @@ header h1{
 }
 .top_b{
     border-right: 1px black solid;
+}
+
+.no_case{
+    font-family: Hiragino Maru Gothic ProN;
+    margin: 10px 10px;
+    border-bottom: 5px black solid;
+    display: inline-block;
+    font-size: 40px;
+    color:#59716F;
+}
+
+.contents{
+    font-family: Hiragino Maru Gothic ProN;
+    margin: 30px 10px;
+}
+
+.tell{
+    font-family: Hiragino Maru Gothic ProN;
+    margin: 10px 10px;
+
+}
+.city_hall{
+    font-family: Hiragino Maru Gothic ProN;
+    margin-left: 10px;
+    color:#D33B1F;
 }
