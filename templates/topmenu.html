@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static\css\style.css">
+    <title>ゴミ出し通知サービス</title>
+</head>
+<body>
+    <header>
+        
+        <h1>今日はゴミの日</h1>
+        <div class="gomisc">
+            <tr>
+            <td><input type="text" value="ゴミの分別を検索" class="gomi_in" size="12"></td>
+            <td><input type="submit" value="検索"></td>
+            </tr>
+        </div>
+        
+    </header>
+    <main>
+        <h1 class="select_area"></h1>
+        <div class="calender">
+            <table>
+                <tr>
+                    <td>月</td>
+                    <td>火</td>
+                    <td>水</td>
+                    <td>木</td>
+                    <td>金</td>
+                    <td class="do">土</td>
+                    <td class="niti">日</td>
+                </tr>
+                <tr>
+                    <td id="cal1"></td>
+                    <td id="cal2"></td>
+                    <td id="cal3"></td>
+                    <td id="cal4"></td>
+                    <td id="cal5"></td>
+                    <td id="cal6"></td>
+                    <td id="cal7"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="extra-mes">
+            <p>資源ごみは〇〇です。</p>
+            <p>ごみは〇時までに出しましょう。</p>
+            <p>粗大ごみに関しては市町村にご連絡ください。</p>
+        </div>
+        <div class="menu-btn">
+            <a href="" class="menu-btn1">分別一覧</a>
+            <a href="" class="menu-btn2">通知設定</a>
+            <a href="" class="menu-btn3">エリア再設定</a>
+        </div>
+    </main>
+</body>
+</html>
