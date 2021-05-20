@@ -224,6 +224,13 @@ text-align: center;
 
 /*ここから　page5のCSS*/
  .recycle h2 {
-     font-color: green;
+  text-align: center;
+  font-size: 40px;
+  color: green;
+
  }
-  
+.howtoseparate h1 {
+    color:#D33B1F;
+    font-size: 40px;
+
+}  
