@@ -199,3 +199,38 @@ header h1{
     margin-left: 10px;
     color:#D33B1F;
 }
+
+/*ここから　page5のcss*/
+h1 {
+text-align: center;
+
+}
+
+.frammable {
+font-family: Hiragino Maru Gothic ProN;
+font-size: 30px;
+font-weight: 700;
+text-align: center;
+
+}
+
+.nonframmable {
+font-family: Hiragino Maru Gothic ProN;
+font-size: 30px;
+font-weight: 700;
+text-align: center;
+
+}
+
+/*ここから　page5のCSS*/
+ .recycle h2 {
+  text-align: center;
+  font-size: 40px;
+  color: green;
+
+ }
+.howtoseparate h1 {
+    color:#D33B1F;
+    font-size: 40px;
+
+}  
