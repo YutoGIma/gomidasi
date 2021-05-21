@@ -10,23 +10,15 @@
 <body>
     <img src="../static/img/01.jpeg" alt="" class="top_img">
     <div class="city_select">
-        <h1 >エリアの選択</h1>
-        <form action="/erea" method="POST">
+        <h1 >メールアドレスを入力</h1>
+        <form action="/set_mail" method="POST">
             <tr>
             <input type="hidden" value="{{id}}" name="erea_id">
-            <td><input type="text" placeholder="エリアを選択" class="city_sc" name="erea_sc"></td>
-            <td><input type="submit" value="検索" class="city_sb"></td>
+            <td><input type="email" placeholder="メールアドレス" class="city_sc" name="mail_ad"></td>
+            <td><input type="submit" value="入力" class="city_sb"></td>
             </tr>
         </form>
     </div>
-    {% for item in erea %}
-    <div class="city_menu">
-        <a href="/set_mail/{{item['id']}}">{{item["erea"]}}</a>
-        <!-- <a href="">港町</a>
-        <a href="">久茂地</a>
-        <a href="">屋良</a> -->
-        
-    </div>
-    {% endfor %}
+
 </body>
 </html>
