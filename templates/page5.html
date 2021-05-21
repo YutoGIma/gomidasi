@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
-    <title>ゴミ分別表</title>
+    <title>ゴミ出し通知サービス</title>
 </head>
 <body>
    <header>
-    <h1>今日はゴミの日</h1>
+       <h1>今日はゴミの日</h1>
+    
     <div class="gomisc">
         <tr>
         <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12"></td>
@@ -22,13 +23,21 @@
 
 
       <main>
-     <h1 class="selectedarea">選択されたエリア</h1>
+          <div class="selected_area">
+              <a href=""></a>
+          </div>
+     
 
      <div class="frammable">燃えるゴミ</div>
-     <p>紙類、生ゴミ、草葉類、食用油、紙おむつ、プラスチック、CD、カセットテープ、ビデオテープ</p>
+     <p class="frammable_items">プラスチック、ゴム、皮革、生ゴミ、油、<br>紙おむつ、紙クズ</p>
 
      <div class="nonframmable">燃えないゴミ</div>
-     <p>紙類、生ゴミ、草葉類、食用油、紙おむつ、プラスチック、CD、カセットテープ、ビデオテープ</p>
+     <p class="nonframmable_items">金属、金属を含む混合物、陶磁器、<br>ガラス製品、小型家電製品、その他</p>
+     <div class="recycle">資源ごみ</div>
+     <p class="recycle_items">新聞紙、チラシ、段ボール、本・雑誌、<br>紙パック（飲料等）、雑紙、<br>かん、<br>びん、<br>ペットボトル</p>
+    
+         
+    
 
 
 

@@ -26,7 +26,7 @@ img {
 }
 .city_select{
     text-align:center;
-    font-family: Hiragino Maru Gothic ProN;
+    
 }
 .city_select h1{
     font-size:45px;
@@ -54,7 +54,7 @@ img {
 }
 
 .city_menu a{
-    font-family: Hiragino Maru Gothic ProN;
+    
     font-size: 35px;
     display: block;
     text-align: center;
@@ -73,6 +73,7 @@ img {
 body{
     background-color:rgb(253,251,235);
     margin-bottom:80px;
+    font-family:font-family: 'ヒラギノ角ゴシック','Hiragino Sans','Arial','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','ＭＳ ゴシック',sans-serif;
 }
 header{
     background-color: rgb(242,163,105);
@@ -185,7 +186,7 @@ header h1{
 }
 
 .no_case{
-    font-family: Hiragino Maru Gothic ProN;
+    
     margin: 10px 10px;
     border-bottom: 5px black solid;
     display: inline-block;
@@ -194,17 +195,17 @@ header h1{
 }
 
 .contents{
-    font-family: Hiragino Maru Gothic ProN;
+    
     margin: 30px 10px;
 }
 
 .tell{
-    font-family: Hiragino Maru Gothic ProN;
+    
     margin: 10px 10px;
 
 }
 .city_hall{
-    font-family: Hiragino Maru Gothic ProN;
+    
     margin-left: 10px;
     color:#D33B1F;
 }
@@ -216,30 +217,70 @@ text-align: center;
 }
 
 .frammable {
-font-family: Hiragino Maru Gothic ProN;
+
 font-size: 30px;
 font-weight: 700;
 text-align: center;
+color: #D33B1F;
 
+}
+.frammable_items {
+    font-size: 20px;
 }
 
 .nonframmable {
-font-family: Hiragino Maru Gothic ProN;
+
+font-size: 30px;
+font-weight: 700;
+text-align: center;
+color :blue;
+
+}
+.nonframmable_items {
+    font-size: 20px;
+}
+
+
+.recycle {
+    
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: green;
+}
+.recycle_items {
+    font-size: 20px;
+}
+
+/*ここから　page6のCSS*/
+ .recycle h2 {
+   color: green;  
+   
 font-size: 30px;
 font-weight: 700;
 text-align: center;
 
-}
 
-/*ここから　page5のCSS*/
- .recycle h2 {
-  text-align: center;
-  font-size: 40px;
-  color: green;
-
+ }
+ .recycle_item {
+     font-size: 25px;
+     font-weight: 500;
+     color: black;
+ }
+ .explain {
+     font-size: 20px;
+     font-weight: 300px;
+     color: gray;
  }
 .howtoseparate h1 {
     color:#D33B1F;
-    font-size: 40px;
-
+    font-size: 30px;
+    
+    font-weight: 700;
+    text-align: center;
 }  
+.separation {
+    
+    font-size: 20px;
+    font-weight: 250;
+}
