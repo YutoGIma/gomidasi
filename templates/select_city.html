@@ -11,17 +11,21 @@
     <img src="../static/img/01.jpeg" alt="" class="top_img">
     <div class="city_select">
         <h1 >市町村選択</h1>
-        <tr>
-        <td><input type="text" value="市町村を選択" class="city_sc"></td>
-        <td><input type="submit" value="検索" class="city_sb"></td>
-        </tr>
+        <form action="/select_city" method="post">
+            <tr>
+            <td><input type="text" placeholder="市町村を選択" class="city_sc" name="city_sc"></td>
+            <td><input type="submit" value="検索" class="city_sb"></td>
+            </tr>
+        </form>
     </div>
+    {% for item in city %}
     <div class="city_menu">
-        <a href="">沖縄市</a>
-        <a href="">うるま市</a>
+        <a href="/erea/{{item['id']}}">{{item["city"]}}</a>
+        <!-- <a href="">うるま市</a>
         <a href="">読谷村</a>
-        <a href="">嘉手納町</a>
+        <a href="">嘉手納町</a> -->
         
     </div>
+    {% endfor %}
 </body>
 </html>
