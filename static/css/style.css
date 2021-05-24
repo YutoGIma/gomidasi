@@ -258,19 +258,18 @@ color :blue;
 }
 
 /*ここから　page6のCSS*/
- .recycle h2 {
-   color: green;  
-   
-font-size: 30px;
-font-weight: 700;
-text-align: center;
 
-
- }
  .recycle_item {
-     font-size: 25px;
+     margin-top:10px;
+     font-size: 30px;
      font-weight: 500;
      color: black;
+     text-align: center;
+ }
+ .selectjan{
+     color:green;
+     font-weight: 500;
+     font-size: 30px;
  }
  .explain {
      font-size: 20px;
@@ -280,12 +279,14 @@ text-align: center;
 .howtoseparate h1 {
     color:#D33B1F;
     font-size: 30px;
-    
+    margin-top:10px;
     font-weight: 700;
     text-align: center;
 }  
 .separation {
-    
+    text-align:center;
     font-size: 20px;
     font-weight: 250;
+    width:80%;
+    margin:0 auto;
 }
