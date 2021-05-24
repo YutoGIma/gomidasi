@@ -222,7 +222,7 @@ text-align: center;
 
 .frammable {
 
-font-size: 30px;
+font-size: 40px;
 font-weight: 700;
 text-align: center;
 color: #D33B1F;
@@ -237,7 +237,7 @@ line-height: 60px;
 }
 
 .nonframmable {
-font-size: 30px;
+font-size: 40px;
 font-weight: 700;
 text-align: center;
 color :blue;
@@ -252,7 +252,7 @@ line-height: 60px;
 
 .recycle {
     
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
     color: green;
