@@ -12,11 +12,11 @@
     <header>
         <h1>今日はゴミの日</h1>
         <div class="gomisc">
-            <form action="" method="POST">
-            <tr>
-            <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12"></td>
-            <td><input type="submit" value="検索"></td>
-            </tr>
+            <form action="/gomi_sc" method="POST">
+                <tr>
+                <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12" name="gomi_in"></td>
+                <td><input type="submit" value="検索"></td>
+                </tr>
             </form>
         </div>
 
@@ -25,19 +25,15 @@
     </header>
 <main>
  
-<h1 class="no_case">ペットボトル</h1>
-<h2 class="recycle_item"><span class="selectjan">分別区分</span>：資源ごみ</h2>
+    {% for item in scresult %}
+<h1 class="no_case">{{item["name"]}}</h1>
+<h2 class="recycle_item"><span class="selectjan">分別区分</span>：{{item["type"]}}</h2>
 
     <div class="howtoseparate">
         <h1>分別方法</h1>
-        <p class="separation">キャップとラベルは別にします。
-        キャップはリサイクルへ 
-        ラベルは燃えるゴミへ   
-        ペットボトル本体は資源ごみへ 
-        資源ごみは透明な袋に入れる。
-        </p>
+        <p class="separation">{{item["message"]}}</p>
     </div>
-
+{% endfor %}
 
 </main>
 

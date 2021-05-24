@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
     <title>ゴミ出し通知サービス</title>
 </head>
 <body>
    <header>
        <h1>今日はゴミの日</h1>
        <div class="gomisc">
-        <form action="" method="POST">
+        <form action="/gomi_sc" method="POST">
             <tr>
-            <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12"></td>
+            <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12" name="gomi_in"></td>
             <td><input type="submit" value="検索"></td>
             </tr>
         </form>
@@ -31,9 +31,10 @@
 
      <div class="frammable">燃えるゴミ</div>
      <p class="frammable_items">プラスチック、ゴム<br>皮革、生ゴミ、油、<br>紙おむつ、紙クズ</p>
-
+    <br>
      <div class="nonframmable">燃えないゴミ</div>
      <p class="nonframmable_items">金属、金属を含む混合物、<br>陶磁器、ガラス製品、<br>小型家電製品、その他</p>
+     <br>
      <div class="recycle">資源ごみ</div>
      <p class="recycle_items">新聞紙、チラシ、<br>段ボール、本・雑誌、<br>紙パック（飲料等）、雑がみ、<br>かん、びん、<br>ペットボトル</p>
     
@@ -44,7 +45,7 @@
 
       </main> 
       <div class="fot_menu">
-        <a class="fot top_b" href="">
+        <a class="fot top_b" href="/topmenu/{{id}}/{{user_id}}">
             <p>TOP</p>
             <img src="../static\img\203-300x300.jpeg" alt="">
         </a>
