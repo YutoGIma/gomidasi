@@ -57,7 +57,6 @@ def erea_sc():
     for row in c.fetchall():
         erea.append({"id":row[0],"erea":row[1]})
     c.close()
-    session["erea_id"]=erea["id"]
     return render_template("erea.html",erea=erea)
 
 @app.route("/set_mail/<int:id>")
@@ -88,6 +87,7 @@ def set_mail_post():
     user_id=c.fetchone()
     user_id=user_id[0]
     c.close
+    session["user_id"]=user_id
     return redirect("/topmenu/%s/%s"%(id,user_id))
 
 
