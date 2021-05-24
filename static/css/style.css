@@ -227,6 +227,7 @@ font-weight: 700;
 text-align: center;
 color: #D33B1F;
 line-height: 60px;
+text-decoration: underline;
 
 }
 .frammable_items {
@@ -242,6 +243,7 @@ font-weight: 700;
 text-align: center;
 color :blue;
 line-height: 60px;
+text-decoration: underline;
 }
 .nonframmable_items {
     font-size: 25px;
@@ -257,6 +259,7 @@ line-height: 60px;
     text-align: center;
     color: green;
     line-height: 60px;
+    text-decoration: underline;
 }
 .recycle_items {
     font-size: 25px;
