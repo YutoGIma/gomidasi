@@ -20,6 +20,10 @@ img {
 	border: 0px;
 	vertical-align: bottom;
 }
+@media only screen and (max-width: 560px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+    }
 
 .top_img{
     width:100%;
