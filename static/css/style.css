@@ -226,23 +226,27 @@ font-size: 30px;
 font-weight: 700;
 text-align: center;
 color: #D33B1F;
+line-height: 60px;
 
 }
 .frammable_items {
     font-size: 20px;
-    text-align:center
+    text-align: center;
+    line-height: 30px;
+    
 }
 
 .nonframmable {
-
 font-size: 30px;
 font-weight: 700;
 text-align: center;
 color :blue;
-
+line-height: 60px;
 }
 .nonframmable_items {
     font-size: 20px;
+    text-align: center;
+    line-height: 30px;
 }
 
 
@@ -252,9 +256,12 @@ color :blue;
     font-weight: 700;
     text-align: center;
     color: green;
+    line-height: 60px;
 }
 .recycle_items {
     font-size: 20px;
+    text-align: center;
+    line-height: 30px;
 }
 
 /*ここから　page6のCSS*/
