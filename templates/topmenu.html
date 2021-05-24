@@ -12,9 +12,9 @@
         
         <h1>今日はゴミの日</h1>
         <div class="gomisc">
-        <form action="" method="POST">
+        <form action="/gomi_sc" method="POST">
             <tr>
-            <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12"></td>
+            <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12" name="gomi_in"></td>
             <td><input type="submit" value="検索"></td>
             </tr>
         </form>
@@ -58,7 +58,11 @@
             <p>ゴミ分別・収集：<a href="tel:9391212" class="tel">939-1212</a></p>
         </div>
         <div class="menu-btn">
+<<<<<<< HEAD
             <a href="/page5" class="menu-btn1">分別一覧</a>
+=======
+            <a href="/page5/{{id}}/{{user_id}}" class="menu-btn1">分別一覧</a>
+>>>>>>> 73b9146630206d06524da55b1e629719e902f71b
             <a href="/bell/{{id}}/{{user_id}}" class="menu-btn2">通知設定</a>
             <a href="/del_select" class="menu-btn3">エリア再設定</a>
         </div>

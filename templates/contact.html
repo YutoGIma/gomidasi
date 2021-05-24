@@ -11,16 +11,16 @@
     <header>
         <h1>今日はゴミの日</h1>
         <div class="gomisc">
-        <form action="" method="POST">
-            <tr>
-            <td><input type="text" value="ゴミの分別を検索" class="gomi_in" size="12"></td>
-            <td><input type="submit" value="検索"></td>
-            </tr>
-        </form>
+            <form action="/gomi_sc" method="POST">
+                <tr>
+                <td><input type="text" placeholder="ゴミの分別を検索" class="gomi_in" size="12" name="gomi_in"></td>
+                <td><input type="submit" value="検索"></td>
+                </tr>
+            </form>
         </div>
     </header>
     <main>
-        <h1 class="no_case">該当なし</h1>
+        <h1 class="no_case">{{text}}</h1>
         <h1 class="contents">分別方法に関しては各市町村へお問い合わせください。</h1>
         <h2 class="city_hall">那覇市首里ゴミ取集課</h2>
         <h2><a href="tel:000-1234-5678" class="tell">TEL:000-1234-5678</a></h2>

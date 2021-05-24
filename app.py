@@ -53,7 +53,6 @@ def erea_sc():
     for row in c.fetchall():
         erea.append({"id":row[0],"erea":row[1]})
     c.close()
-    session["erea_id"]=erea["id"]
     return render_template("erea.html",erea=erea)
 
 @app.route("/set_mail/<int:id>")
@@ -84,8 +83,8 @@ def set_mail_post():
     user_id=c.fetchone()
     user_id=user_id[0]
     c.close
+    session["user_id"]=user_id
     return redirect("/topmenu/%s/%s"%(id,user_id))
-
 
 @app.route("/bell/<int:id>/<int:user_id>")
 def bell(id,user_id):
@@ -328,6 +327,27 @@ def contact():
 def del_select():
     session.pop("erea_id",None)
     return redirect("/select_city")
+
+@app.route("/page5/<int:id>/<int:user_id>")
+def page5(id,user_id):
+    return render_template ("page5.html",id=id,user_id=user_id)
+
+@app.route("/gomi_sc",methods=["POST"])
+def gomi_sc():
+    texta=request.form.get("gomi_in")
+    text="%"+texta+"%"
+    conn=sqlite3.connect("okinawashidatebase.db")
+    c=conn.cursor()
+    c.execute("select name,type,message from gomi where name like ?",(text,))
+    scresult=[]
+    for row in c.fetchall():
+        scresult.append({"name":row[0],"type":row[1],"message":row[2]})
+    c.close()
+    if scresult == []:
+        return render_template("contact.html",text=texta)
+    else:
+        return render_template("page6.html",scresult=scresult)
+    
 
 
 if __name__ == '__main__':
