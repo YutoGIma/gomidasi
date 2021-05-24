@@ -87,8 +87,6 @@ def set_mail_post():
     return redirect("/topmenu/%s/%s"%(id,user_id))
 
 
-
-
 @app.route("/bell/<int:id>/<int:user_id>")
 def bell(id,user_id):
     return render_template("bell.html",id=id,user_id=user_id)
