@@ -410,10 +410,12 @@ def gomi_sc():
         for row in c.fetchall():
             scresult.append({"name":row[0],"type":row[1],"message":row[2]})
         c.close()
+        id=session.get("id")
+        user_id=session.get("user_id")
         if scresult == []:
-            return render_template("contact.html",text=texta)
+            return render_template("contact.html",text=texta,id=id,uer_id=user_id)
         else:
-            return render_template("page6.html",scresult=scresult)
+            return render_template("page6.html",scresult=scresult,id=id,uer_id=user_id)
     else:
         return redirect("/select_city")
     
