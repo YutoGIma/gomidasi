@@ -71,6 +71,7 @@ def topmenu(id,user_id):
     return render_template("topmenu.html",sel_erea=sel_erea,cal=cal,user_id=user_id,id=id)
 
 
+
 @app.route("/set_mail",methods=["POST"])
 def set_mail_post():
     id=request.form.get("erea_id")
