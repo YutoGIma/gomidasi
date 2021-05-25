@@ -385,6 +385,12 @@ def contact():
 @app.route("/del_select")
 def del_select():
     if "user_id" in session:
+        user_id=session.get("user_id")
+        conn=sqlite3.connect("ゴミ分別DB.db")
+        c=conn.cursor()
+        c.execute("delete from users where id=?",(user_id,))
+        conn.commit()
+        c.close
         session.pop("user_id",None)
         session.pop("id",None)
         return redirect("/select_city")
