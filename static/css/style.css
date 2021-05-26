@@ -103,12 +103,22 @@ header h1{
 .gomi_in {
     height: 33px;
     font-size: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
     
 }
 
 .kensaku {
     height: 50px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: -5px;
+
 }
+
+
 
 .select_erea{
     text-align: center;
