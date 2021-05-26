@@ -24,42 +24,64 @@
         
     </header>
     <main>
-        <div>
+        <div class="my_bell">
             <h1>選択した通知</h1>
             <table>
                 <tr>
                     <td></td>
-                    <td>燃えるゴミ</td>
-                    <td>燃えないゴミ</td>
-                    <td>資源ごみ</td>
+                    <td>燃える<br>ゴミ</td>
+                    <td>燃えない<br>ゴミ</td>
+                    <td>資源<br>ごみ</td>
                 </tr>
                 <tr>
                     <td>当日</td>
                     <td>
-                        {% if  fireto >= 1 %}
-                        <p>〇</p>
+                        {% if fireto >= 1 %}
+                        <p>○</p>
+                        {% else %}
+                        <p>×</p>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if no_fireto >= 1 %}
+                        <p>○</p>
+                        {% else %}
+                        <p>×</p>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if sourceto >= 1 %}
+                        <p>○</p>
+                        {% else %}
+                        <p>×</p>
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <td>前日</td>
+                    <td>
+                        {% if fireyes >= 1 %}
+                        <p>○</p>
+                        {% else %}
+                        <p>×</p>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if no_fireyes >= 1 %}
+                        <p>○</p>
+                        {% else %}
+                        <p>×</p>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if sourceyes >= 1 %}
+                        <p>○</p>
+                        {% else %}
+                        <p>×</p>
                         {% endif %}
                     </td>
                 </tr>
             </table>
-            {% if  fireto >= 1 %}
-            <p>燃えるゴミ-当日</p>
-            {% endif %}
-            {% if  no_fireto >=1 %}
-            <p>燃えないゴミ-当日</p>
-            {% endif %}
-            {% if sourceto >=1 %}
-            <p>資源ごみ-当日</p>
-            {% endif %}
-            {% if fireyes >=1 %}
-            <p>燃えるゴミ-前日</p>
-            {% endif %}
-            {% if no_fireyes >=1 %}
-            <p>燃えないゴミ-前日</p>
-            {% endif %}
-            {% if sourceyes >=1 %}
-            <p>資源ごみ-前日</p>
-            {% endif %}
 
         </div>
         <h1 class="bell fire">燃えるゴミ</h1>
