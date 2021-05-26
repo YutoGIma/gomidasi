@@ -108,6 +108,7 @@ header h1{
 
 .kensaku {
     height: 35px;
+    font-size:20px;
 }
 
 .select_erea{
@@ -187,6 +188,23 @@ header h1{
 }
 .resource{
     color:green;
+}
+.my_bell {
+    margin:20px auto;
+    text-align:center;
+}
+.my_bell td{
+    width:150px;
+    font-size:15px;
+}
+.my_bell table{
+    margin:10 auto;
+}
+.my_bell{
+    font-weight: 1000;
+}
+.my_bell p{
+    font-size:30px;
 }
 
 
