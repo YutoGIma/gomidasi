@@ -123,6 +123,9 @@ header h1{
     text-align: right;
     margin-top: 5px;
 }
+.emphasis span {
+    color: #D33B1F;
+}
 .tel{
     color:#0b2f88;
 }
@@ -221,15 +224,17 @@ text-align: center;
 }
 
 .frammable {
-
+background: linear-gradient(transparent 70%, #ff99cc 0%);
 font-size: 40px;
 font-weight: 700;
 text-align: center;
 color: #D33B1F;
 line-height: 60px;
-text-decoration: underline;
+
 
 }
+
+
 .frammable_items {
     font-size: 25px;
     text-align: center;
@@ -243,7 +248,7 @@ font-weight: 700;
 text-align: center;
 color :blue;
 line-height: 60px;
-text-decoration: underline;
+background: linear-gradient(transparent 70%, #99ccff 0%);
 }
 .nonframmable_items {
     font-size: 25px;
@@ -259,7 +264,7 @@ text-decoration: underline;
     text-align: center;
     color: green;
     line-height: 60px;
-    text-decoration: underline;
+    background: linear-gradient(transparent 70%, #5bed3b 0%);
 }
 .recycle_items {
     font-size: 25px;
