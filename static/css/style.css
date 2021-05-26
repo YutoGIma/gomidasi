@@ -88,13 +88,28 @@ header{
 header h1{
     float:left;
     font-size:25px;
-    padding:25px 0px 0px 5px;
+    padding:25px 0px 0px 10px;
     
 }
 .gomisc{
     float:right;
-    padding:29px 5px 0px 0px;
+    padding:22px 13px 22px 0px;
+    
+
+    
+    
+    
 }
+
+.gomi_in {
+    height: 33px;
+    
+}
+
+.kensaku {
+    height: 35px;
+}
+
 .select_erea{
     text-align: center;
     margin:20px auto 0px;
@@ -124,6 +139,9 @@ header h1{
     text-align: right;
     margin-top: 5px;
     margin-right:10px;
+}
+.emphasis span {
+    color: #D33B1F;
 }
 .tel{
     color:#0b2f88;
@@ -216,22 +234,27 @@ header h1{
     color:#D33B1F;
 }
 
-/*ここから　page5のcss*/
+/*ここから page5のcss*/
 h1 {
 text-align: center;
 
 }
 
 .frammable {
-
+background: linear-gradient(transparent 70%, #ff99cc 0%);
 font-size: 40px;
 font-weight: 700;
 text-align: center;
 color: #D33B1F;
 line-height: 60px;
-text-decoration: underline;
+display: inline;
+margin: 0 auto;
+
+
 
 }
+
+
 .frammable_items {
     font-size: 25px;
     text-align: center;
@@ -245,7 +268,7 @@ font-weight: 700;
 text-align: center;
 color :blue;
 line-height: 60px;
-text-decoration: underline;
+background: linear-gradient(transparent 70%, #99ccff 0%);
 }
 .nonframmable_items {
     font-size: 25px;
@@ -261,7 +284,7 @@ text-decoration: underline;
     text-align: center;
     color: green;
     line-height: 60px;
-    text-decoration: underline;
+    background: linear-gradient(transparent 70%, #5bed3b 0%);
 }
 .recycle_items {
     font-size: 25px;
@@ -300,7 +323,7 @@ text-decoration: underline;
     margin-bottom:40px;
 }
 .separation {
-    text-align:center;
+    text-align:left;
     font-size: 25px;
     font-weight: 250;
     width:85%;
