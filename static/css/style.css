@@ -87,13 +87,28 @@ header{
 header h1{
     float:left;
     font-size:25px;
-    padding:25px 0px 0px 5px;
+    padding:25px 0px 0px 10px;
     
 }
 .gomisc{
     float:right;
-    padding:29px 5px 0px 0px;
+    padding:22px 13px 22px 0px;
+    
+
+    
+    
+    
 }
+
+.gomi_in {
+    height: 33px;
+    
+}
+
+.kensaku {
+    height: 35px;
+}
+
 .select_erea{
     text-align: center;
     margin:20px auto 0px;
@@ -217,7 +232,7 @@ header h1{
     color:#D33B1F;
 }
 
-/*ここから　page5のcss*/
+/*ここから page5のcss*/
 h1 {
 text-align: center;
 
