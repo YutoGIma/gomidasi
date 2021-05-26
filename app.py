@@ -98,8 +98,6 @@ def topmenu(id,user_id):
     else:
         return redirect("/select_city")
 
-
-
 @app.route("/set_mail",methods=["POST"])
 def set_mail_post():
     if "user_id" in session:
@@ -124,7 +122,29 @@ def set_mail_post():
 @app.route("/bell/<int:id>/<int:user_id>")
 def bell(id,user_id):
     if "user_id" in session:
-        return render_template("bell.html",id=id,user_id=user_id)
+        conn=sqlite3.connect("ゴミ分別DB.db")
+        c=conn.cursor()
+        c.execute("select 月1,月2,火1,火2,水1,水2,木1,木2,金1,金2,土1,土2,日1,日2 from users where id=? ",(user_id,))
+        my_bells=c.fetchall()
+        my_bell=my_bells[0]
+        my_bell1=[my_bell[0],my_bell[2],my_bell[4],my_bell[6],my_bell[8],my_bell[10],my_bell[12]]
+        my_bell2=[my_bell[1],my_bell[3],my_bell[5],my_bell[7],my_bell[9],my_bell[11],my_bell[13]]
+        fireto=no_fireto=sourceto=fireyes=no_fireyes=sourceyes=0
+        for item in my_bell1:
+            if item==1:
+                fireto += 1
+            elif item==2:
+                no_fireto += 1
+            elif item==3:
+                sourceto += 1
+        for item in my_bell2:
+            if item==1:
+                fireyes += 1
+            elif item==2:
+                no_fireyes += 1
+            elif item==3:
+                sourceyes += 1
+        return render_template("bell.html",id=id,user_id=user_id,fireto=fireto,no_fireto=no_fireto,sourceto=sourceto,fireyes=fireyes,no_fireyes=no_fireyes,sourceyes=sourceyes)
     else:
         return redirect("/select_city")
 
@@ -419,9 +439,9 @@ def gomi_sc():
         id=session.get("id")
         user_id=session.get("user_id")
         if scresult == []:
-            return render_template("contact.html",text=texta,id=id,uer_id=user_id)
+            return render_template("contact.html",text=texta,id=id,user_id=user_id)
         else:
-            return render_template("page6.html",scresult=scresult,id=id,uer_id=user_id)
+            return render_template("page6.html",scresult=scresult,id=id,user_id=user_id)
     else:
         return redirect("/select_city")
     
@@ -429,4 +449,4 @@ def gomi_sc():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run()
+    app.run(host='0.0.0.0')
