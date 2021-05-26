@@ -93,7 +93,7 @@ header h1{
 }
 .gomisc{
     float:right;
-    padding:22px 13px 22px 0px;
+     padding:17px 0px 22px 0px; 
     
 
     
@@ -105,17 +105,23 @@ header h1{
     font-size: 15px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    
+    padding-top:10px;
     
 }
 
 .kensaku {
-    height: 50px;
+    -webkit-appearance: none;
+    height: 33px;
     font-size: 20px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    margin-left: -5px;
-
+    margin-left: -10px;
+    margin-right:5px;
+    margin-top:10px;
+    width:40px;
+    padding:0px;
+    border-radius: 0;
+    background-color: silver;
 }
 
 
