@@ -26,12 +26,14 @@
 <main>
  
     {% for item in scresult %}
-<h1 class="no_case">{{item["name"]}}</h1>
+<h1 class="no_casea">{{item["name"]}}</h1>
 <h2 class="recycle_item"><span class="selectjan">分別区分</span>：{{item["type"]}}</h2>
 
     <div class="howtoseparate">
+        {% if item["message"] != None %}
         <h1>分別方法</h1>
         <p class="separation">{{item["message"]}}</p>
+        {% endif %}
     </div>
 {% endfor %}
 
