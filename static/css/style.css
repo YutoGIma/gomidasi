@@ -221,6 +221,11 @@ header h1{
 .my_bell p{
     font-size:30px;
 }
+.reset_btn{
+    border:1px black solid;
+    background-color: silver;
+    padding:5px 10px;
+}
 
 
 .fot_menu{
