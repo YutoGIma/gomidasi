@@ -98,17 +98,21 @@ header h1{
 
     
     
-    
 }
 
 .gomi_in {
     height: 33px;
+    font-size: 15px;
     
 }
 
 .kensaku {
+<<<<<<< HEAD
     height: 35px;
     font-size:20px;
+=======
+    height: 50px;
+>>>>>>> c928319fdcf266dc363e2dd08872d0870a90c9c6
 }
 
 .select_erea{
