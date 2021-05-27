@@ -171,8 +171,8 @@ header h1{
     height:30%;
     text-align: center;
     font-size:45px;
-    margin: 25px auto;
-    
+    padding:5px;
+    margin:25px auto;
 }
 .menu-btn1{
     background-color:rgb(190,225,186);
@@ -185,17 +185,27 @@ header h1{
 }
 
 
+.menu-btnb a{
+    display:block;
+    border:1px black solid;
+    width:80%;
+    height:30%;
+    text-align: center;
+    font-size:45px;
+    padding:5px;
+}
 .bell{
-    margin:10px 10px;
-    border-bottom: 5px black solid;
+    margin:10px 10px 5px;
     display: inline-block;
     font-size:40px;
 }
 .hourbell{
     background-color:rgb(242,249,160);
+    margin: 5px auto 25px;
 }
 .daybell{
     background-color:rgb(242,249,160);
+    margin:25px auto;
 }
 .fire{
     color:rgb(245,5,14);
