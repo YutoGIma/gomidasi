@@ -302,6 +302,8 @@ text-align: center;
 color :blue;
 line-height: 60px;
 background: linear-gradient(transparent 70%, #99ccff 0%);
+display: inline;
+margin: 0 auto;
 }
 .nonframmable_items {
     font-size: 25px;
@@ -318,6 +320,8 @@ background: linear-gradient(transparent 70%, #99ccff 0%);
     color: green;
     line-height: 60px;
     background: linear-gradient(transparent 70%, #5bed3b 0%);
+    display: inline;
+    margin: 0 auto;
 }
 .recycle_items {
     font-size: 25px;
