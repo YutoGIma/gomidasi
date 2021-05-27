@@ -93,7 +93,8 @@ header h1{
 }
 .gomisc{
     float:right;
-     padding:17px 0px 22px 0px; 
+     padding:17px 0px 0px 0px; 
+     /* 22 */
     
 
     
@@ -285,13 +286,14 @@ font-weight: 700;
 text-align: center;
 color: #D33B1F;
 line-height: 60px;
-display: inline;
-margin: 0 auto;
-
-
-
+width:205px;
+margin-left: auto;
+margin-right:auto;
 }
 
+.frametag{
+    margin:0 auto;
+}
 
 .frammable_items {
     font-size: 25px;
@@ -307,9 +309,11 @@ text-align: center;
 color :blue;
 line-height: 60px;
 background: linear-gradient(transparent 70%, #99ccff 0%);
-display: inline;
-margin: 0 auto;
+width:250px;
+margin-left: auto;
+margin-right:auto;
 }
+
 .nonframmable_items {
     font-size: 25px;
     text-align: center;
@@ -325,8 +329,10 @@ margin: 0 auto;
     color: green;
     line-height: 60px;
     background: linear-gradient(transparent 70%, #5bed3b 0%);
-    display: inline;
-    margin: 0 auto;
+    width:165px;
+    margin-left: auto;
+    margin-right:auto;
+
 }
 .recycle_items {
     font-size: 25px;
