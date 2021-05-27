@@ -148,6 +148,20 @@ def bell(id,user_id):
     else:
         return redirect("/select_city")
 
+@app.route("/reset/<int:user_id>")
+def reset_bell(user_id):
+    if "user_id" in session:
+        conn=sqlite3.connect("ゴミ分別DB.db")
+        c=conn.cursor()
+        c.execute("update users set 月1=0,火1=0,水1=0,木1=0,金1=0,土1=0,日1=0,月2=0,火2=0,水2=0,木2=0,金2=0,土2=0,日2=0 where id=?",(user_id,))
+        conn.commit()
+        c.close
+        id=session.get("id")
+        return redirect("/bell/%s/%s"%(id,user_id))
+    else:
+        return redirect("/select_city")
+
+
 @app.route("/bell_fire_day/<int:id>/<int:user_id>")
 def bell_fire_day(id,user_id):
     if "user_id" in session:
