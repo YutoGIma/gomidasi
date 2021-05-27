@@ -162,6 +162,7 @@ header h1{
 }
 .tel{
     color:#0b2f88;
+    text-decoration: underline;
 }
 .menu-btn a{
     display:block;
