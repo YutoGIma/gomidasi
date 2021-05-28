@@ -44,7 +44,7 @@ img {
     height: 33px;
     font-size: 18px;
     border-radius:3px;
-    
+    width:70%;
 }
 
 .city_sb{
@@ -192,7 +192,7 @@ header h1{
     height:30%;
     text-align: center;
     font-size:45px;
-    padding:5px;
+    padding:1%;
 }
 .bell{
     margin:10px 10px 5px;
