@@ -7,6 +7,10 @@ import datetime
 import time
 
 
+app=Flask(__name__)
+app.secret_key="sunabacokoza"
+
+
 conn=sqlite3.connect("ゴミ分別DB.db")
 c=conn.cursor()
 c.execute("select mail from users where 月1=1")
